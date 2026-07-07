@@ -16,7 +16,7 @@ A cinematic, dark, Spotify-level audiobook, ebook, and manga app built with **Je
 
 ## ✨ Version
 
-**[v1.0.0](https://github.com/cybruGhost/LITLOOM/releases/tag/V1.0.0)** — Initial Release
+**[![Release](https://img.shields.io/badge/release-v1.0.0-gold?style=for-the-badge)](https://github.com/cybruGhost/LITLOOM/releases/tag/V1.0.0)** — Initial Release
 
 ---
 

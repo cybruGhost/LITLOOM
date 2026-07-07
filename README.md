@@ -1,99 +1,177 @@
-# 📚 LitLoom
+# 📚 LitLoom — Premium Audiobook, Ebook & Manga Android App
+
+<img width="1254" height="1254" alt="LitLoom preview 1" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />
+<img width="1122" height="1402" alt="LitLoom preview 2" src="https://github.com/user-attachments/assets/b541301e-27bf-4a6d-9e4c-1701a66ddc62" />
+
+A cinematic, dark, Spotify-level audiobook, ebook, and manga app built with **Jetpack Compose + Material 3 + Media3 ExoPlayer**.
 
 **Weaving stories together — Audiobooks, Books & Manga in one app.**
 
-LitLoom is an all-in-one reading and listening platform that brings audiobooks, e-books, and manga together in a single, seamless experience. Whether you want to listen on your commute, read before bed, or catch up on the latest manga chapter, LitLoom keeps your entire library in one place.
+---
+
+## 🎨 Design
+Matches the provided UI mockup exactly:
+- **Deep black / charcoal** backgrounds
+- **Gold / amber** accent system
+- **Glassmorphism** cards with blurred cover backgrounds
+- **Cinematic gradients** throughout
+- Premium typography, smooth animations
 
 ---
 
-## ✨ Version
-
-**v1.0.0** — Initial Release
-
----
-
-## 🚀 Features
-
-- 🎧 **Audiobooks** — Stream or download audiobooks with adjustable playback speed, sleep timer, and bookmarking.
-- 📖 **E-Books** — Read digital books with customizable fonts, themes (light/dark/sepia), and page-turn animations.
-- 🎨 **Manga** — Browse manga in a smooth reader with left-to-right and right-to-left (manga-style) reading modes.
-- 🔄 **Sync Across Formats** — Switch between reading and listening to the same title without losing your place.
-- 🔍 **Search & Discover** — Find titles by genre, author, series, or trending charts.
-- 📂 **Library Management** — Organize your collection into custom shelves and reading lists.
-- ⬇️ **Offline Access** — Download content to enjoy without an internet connection.
-- 🌙 **Personalization** — Themes, reading/listening preferences, and progress tracking.
-
----
-
-## 🛠️ Tech Stack
-
-> _Update this section with your actual stack._
-
-| Layer | Technology |
-|---|---|
-| Frontend | e.g. React Native / Flutter |
-| Backend | e.g. Node.js / Django |
-| Database | e.g. PostgreSQL / MongoDB |
-| Storage | e.g. AWS S3 / Firebase Storage |
-| Audio Streaming | e.g. ExoPlayer / AVPlayer |
-
----
-
-## 📥 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/litloom.git
-
-# Navigate into the project
-cd litloom
-
-# Install dependencies
-npm install
-
-# Run the app
-npm start
+## 🏗 Architecture
+```
+com.litloom/
+├── data/
+│   ├── api/          — Retrofit interfaces + Hilt NetworkModule
+│   ├── model/        — Kotlin serializable data classes
+│   └── repository/   — AudiobookRepository, BookRepository, MangaRepository, LocalPreferencesRepository
+├── player/           — Media3 / ExoPlayer PlaybackService (foreground)
+├── navigation/       — NavHost + Screen sealed class
+├── theme/            — Dark Material3 theme, gold palette, typography
+└── ui/
+    ├── components/   — MiniPlayer, BottomNavBar, BookCoverCard, GlassCard…
+    └── screens/
+        ├── home/     — HomeScreen + HomeViewModel
+        ├── discover/ — DiscoverScreen + DiscoverViewModel
+        ├── library/  — LibraryScreen (grid/list toggle)
+        ├── search/   — SearchScreen + SearchViewModel (debounced)
+        ├── profile/  — ProfileScreen
+        ├── details/  — AudiobookDetailScreen, BookDetailScreen, MangaDetailScreen + ViewModels
+        ├── player/   — Full-screen luxury audio player
+        ├── reader/   — Ebook reader (dark/sepia/light themes, font control)
+        └── mangareader/ — Manga reader (LTR/RTL paging, zoom, webtoon scroll mode)
 ```
 
-> Adjust these commands to match your actual project setup (mobile build, backend server, etc.).
+---
+
+## ⚙️ Build Requirements
+- **Android Studio Hedgehog** (2023.1.1) or newer
+- **JDK 17**
+- **compileSdk 35**, **minSdk 26**
 
 ---
 
-## 📱 Getting Started
+## 🔌 Wiring Your APIs
 
-1. Create an account or log in.
-2. Browse the library by category — Books, Audiobooks, or Manga.
-3. Add titles to your personal shelf.
-4. Start reading or listening — your progress syncs automatically.
+Open `app/src/main/java/com/litloom/data/api/ApiService.kt`
 
----
+Change this one line:
+```kotlin
+const val BASE_URL = "https://your-api-host.com/"
+```
 
-## 🗺️ Roadmap
+Your API shape:
 
-- [ ] Social features (reviews, ratings, friend activity)
-- [ ] Multi-language support
-- [ ] Author/creator upload portal
-- [ ] Recommendation engine
-- [ ] Cross-device continuous playback
+| Endpoint | Method | Query params |
+|---|---|---|
+| `/api/audiobooks` | GET | `action=browse|popular|new|<category>&page=N` |
+| `/api/audiobooks` | GET | `action=search&q=<query>&page=N` |
+| `/api/audiobooks` | GET | `action=detail&id=<id>` |
+| `/api/books`      | GET | `action=search&q=<query>` |
+| `/api/books`      | GET | `action=popular` |
+| `/api/books`      | GET | `action=new` |
+| `/api/books`      | GET | `action=download&editionId=<id>` |
+| `/api/manga`      | GET | `action=browse|popular|new|<genre>&page=N` |
+| `/api/manga`      | GET | `action=search&q=<query>` |
+| `/api/manga`      | GET | `action=chapters&seriesId=<id>` |
+| `/api/manga`      | GET | `action=pages&chapterId=<id>` |
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with your proposed changes.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) — update as needed for your project.
+All responses match the data models in `data/model/Models.kt`.
 
 ---
 
-## 📬 Contact
+## 🔊 Audio Playback (ExoPlayer)
 
-For questions, feedback, or support, reach out at: **your-email@example.com**
+`PlaybackService.kt` is a fully wired **Media3 MediaLibraryService** with:
+- Background playback
+- Notification media controls
+- Audio focus handling
+- "Noisy" (headphone unplug) handling
+
+To start playback from the player screen, wire `PlayerViewModel` → `PlaybackService` via `MediaController`:
+
+```kotlin
+val controllerFuture = MediaController.Builder(context,
+    SessionToken(context, ComponentName(context, PlaybackService::class.java))
+).buildAsync()
+
+controllerFuture.addListener({
+    val controller = controllerFuture.get()
+    val item = MediaItem.fromUri(chapter.url)
+    controller.setMediaItem(item)
+    controller.prepare()
+    controller.play()
+}, MoreExecutors.directExecutor())
+```
 
 ---
 
-*Made with ❤️ for readers, listeners, and manga fans everywhere.*
+## 🖼️ Manga Reader
+
+The manga reader (`ui/screens/mangareader/`) supports:
+- **Paged mode** — left-to-right or right-to-left (true manga-style) page turns
+- **Webtoon / scroll mode** — continuous vertical scroll for long-strip manga
+- Pinch-to-zoom and double-tap zoom
+- Preloading of next chapter pages
+- Reading progress synced per chapter/page
+
+---
+
+## 🚀 Build Steps
+
+```bash
+# 1. Open in Android Studio
+File → Open → select the LitLoom folder
+
+# 2. Let Gradle sync (first time downloads ~500MB of deps)
+
+# 3. Set your BASE_URL in ApiService.kt
+
+# 4. Run on device / emulator
+Run → Run 'app'
+
+# 5. Build signed release APK
+Build → Generate Signed Bundle/APK → APK
+```
+
+---
+
+## 📱 Screens
+
+| Screen | Description |
+|---|---|
+| **Home** | Greeting, Continue Listening/Reading hero card, Recommended, Trending, New Releases, Narrators, Short Listens, Editor's Picks |
+| **Discover** | Search bar, genre chips, featured banner, New Releases, Popular Narrators, Top Reads/Listens This Week, Browse tiles |
+| **Audiobook Detail** | Blurred hero, cover art, rating, stats, genres, expandable description, Play/Download/Like, Chapters tab, Similar tab |
+| **Player** | Full-screen blurred bg, progress slider, 15s rewind, play/pause, 30s skip, speed (0.75x–2x), sleep timer, queue |
+| **Book Detail** | Cover hero, metadata, table of contents, Read + Download buttons |
+| **Reader** | Serifed text, Dark/Sepia/Light themes, font size control, progress, chapter navigation, bookmarks |
+| **Manga Detail** | Cover hero, metadata, chapter list, Read + Download buttons, Similar tab |
+| **Manga Reader** | Paged (LTR/RTL) or webtoon scroll mode, zoom, chapter navigation, progress tracking |
+| **Library** | Books/Audiobooks/Manga/Collections tabs, Continue Listening, Downloaded, Finished, Favorites, grid/list toggle |
+| **Search** | Live debounced search, recent searches, popular searches, browse tiles, results grouped by type |
+| **Profile** | Avatar, Premium badge, stats (Books Read, Hours Listened, Chapters Read, Streak), settings sections, sign out |
+
+---
+
+## 🎯 Mini Player
+Appears globally above the bottom nav when audio is playing.
+Shows cover, title, play/pause, next, progress bar.
+Tapping opens the full Player screen.
+
+---
+
+## 📦 Key Dependencies
+- Jetpack Compose BOM 2024.09
+- Material 3
+- Navigation Compose 2.8
+- Hilt 2.52
+- Retrofit 2.11 + KotlinX Serialization
+- Coil 2.7
+- Media3 / ExoPlayer 1.4
+- Accompanist SystemUI Controller
+
+---
+
+*LitLoom — Built for LitLoom. Powered by your APIs.*

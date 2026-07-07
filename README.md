@@ -1,4 +1,7 @@
 # 📚 LitLoom
+<img width="1254" height="1254" alt="e2b40eba-866b-4220-98c7-0afc6ad6a59d" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />
+<img width="1122" height="1402" alt="d96062bb-e43c-4afa-857a-1d33059a9204" src="https://github.com/user-attachments/assets/b541301e-27bf-4a6d-9e4c-1701a66ddc62" />
+
 
 **Weaving stories together — Audiobooks, Books & Manga in one app.**
 

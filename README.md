@@ -1,7 +1,9 @@
 # 📚 LitLoom — Premium Audiobook, Ebook & Manga Android App
 
-<img width="1254" height="1254" alt="LitLoom preview 1" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />
-<img width="1122" height="1402" alt="LitLoom preview 2" src="https://github.com/user-attachments/assets/b541301e-27bf-4a6d-9e4c-1701a66ddc62" />
+<p align="center">
+  <img width="280" alt="LitLoom preview 1" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />
+  <img width="280" alt="LitLoom preview 2" src="https://github.com/user-attachments/assets/b541301e-27bf-4a6d-9e4c-1701a66ddc62" />
+</p>
 
 A cinematic, dark, Spotify-level audiobook, ebook, and manga app built with **Jetpack Compose + Material 3 + Media3 ExoPlayer**.
 
@@ -52,32 +54,9 @@ com.litloom/
 
 ---
 
-## 🔌 Wiring Your APIs
+## 🔌 API Configuration
 
-Open `app/src/main/java/com/litloom/data/api/ApiService.kt`
-
-Change this one line:
-```kotlin
-const val BASE_URL = "https://your-api-host.com/"
-```
-
-Your API shape:
-
-| Endpoint | Method | Query params |
-|---|---|---|
-| `/api/audiobooks` | GET | `action=browse|popular|new|<category>&page=N` |
-| `/api/audiobooks` | GET | `action=search&q=<query>&page=N` |
-| `/api/audiobooks` | GET | `action=detail&id=<id>` |
-| `/api/books`      | GET | `action=search&q=<query>` |
-| `/api/books`      | GET | `action=popular` |
-| `/api/books`      | GET | `action=new` |
-| `/api/books`      | GET | `action=download&editionId=<id>` |
-| `/api/manga`      | GET | `action=browse|popular|new|<genre>&page=N` |
-| `/api/manga`      | GET | `action=search&q=<query>` |
-| `/api/manga`      | GET | `action=chapters&seriesId=<id>` |
-| `/api/manga`      | GET | `action=pages&chapterId=<id>` |
-
-All responses match the data models in `data/model/Models.kt`.
+The backend endpoint is configured in `app/src/main/java/com/litloom/data/api/ApiService.kt`. Endpoint URLs, routes, and request/response schemas are kept private and are intentionally not published in this repo.
 
 ---
 

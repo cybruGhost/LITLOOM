@@ -1,5 +1,7 @@
 # 📚 LitLoom — Premium Audiobook, Ebook & Manga Android App
 
+[![Release](https://img.shields.io/badge/release-v1.0.0-gold?style=for-the-badge)](https://github.com/cybruGhost/LITLOOM/releases/tag/V1.0.0)
+
 <p align="center">
   <img width="280" alt="LitLoom preview 1" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />
   <img width="280" alt="LitLoom preview 2" src="https://github.com/user-attachments/assets/b541301e-27bf-4a6d-9e4c-1701a66ddc62" />
@@ -8,6 +10,12 @@
 A cinematic, dark, Spotify-level audiobook, ebook, and manga app built with **Jetpack Compose + Material 3 + Media3 ExoPlayer**.
 
 **Weaving stories together — Audiobooks, Books & Manga in one app.**
+
+---
+
+## ✨ Version
+
+**[v1.0.0](https://github.com/cybruGhost/LITLOOM/releases/tag/V1.0.0)** — Initial Release
 
 ---
 

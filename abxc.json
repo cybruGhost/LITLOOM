@@ -1,22 +1,24 @@
 {
   "app": "LitLoom",
   "packageName": "com.storyvault",
-  "versionName": "1.0.0",
-  "versionCode": 1,
+  "versionName": "4.0.0",
+  "versionCode": 4,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-07-15",
+  "releaseDate": "2026-07-19",
   "mandatory": false,
-  "title": "LitLoom 1.0.0",
-  "message": "This update improves Home discovery, playback, reading, metadata loading, and listening history.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v1.0.0/app-release.apk",
+  "title": "LitLoom 4.0.0",
+  "message": "This update tightens playback, downloads, Library, reader stability, and the LitLoom UI.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.0.0/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "6450FE381ACC91839F4306F50E9300B474A81E296062A9ACA930F5F6C32D6FF0",
-  "sizeBytes": 5980591,
+  "sha256": "FF496EE198313741A1284B2E29851CA970646178EB25D68873A281479506CBFC",
+  "sizeBytes": 6257367,
   "changelog": [
-    "Redesigned Home with a featured rotating story, quick actions, stronger suggestions, and tighter discovery rows.",
-    "Cleaner audiobook home, detail, chapter, player, and mini-player flow.",
-    "Added real local listening history.",
-    "Improved book opening and metadata loading.",
-    "Improved chapter playback reliability."
+    "Mini-player close now stops playback instead of only hiding the bar.",
+    "Audiobook chapter downloads now save inside the app, including per-chapter download actions.",
+    "Player download, sleep, queue, chapter, and save actions are wired to real app state.",
+    "Library now includes real Downloads, listening history, and saved favorites.",
+    "Book downloads save inside the app and the reader uses the resolved local reading flow.",
+    "Added LitLoom share deeplinks with a public install/update fallback.",
+    "Forced bundled Roboto across app UI."
   ]
 }

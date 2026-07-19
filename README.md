@@ -1,7 +1,7 @@
 # 📚 LitLoom — Premium Audiobook, Ebook & Manga Android App
 
 [![Release](https://img.shields.io/badge/release-v4.0.0-gold?style=for-the-badge)](https://github.com/cybruGhost/LITLOOM/releases/tag/V4.0.0)
-[![Downloads](https://img.shields.io/github/downloads/cybruGhost/LITLOOM/V1.0.0/total?style=for-the-badge&color=amber&label=downloads)](https://github.com/cybruGhost/LITLOOM/releases/tag/V4.0.0)
+[![Downloads](https://img.shields.io/github/downloads/cybruGhost/LITLOOM/V4.0.0/total?style=for-the-badge&color=amber&label=downloads)](https://github.com/cybruGhost/LITLOOM/releases/tag/V4.0.0)
 
 <p align="center">
   <img width="280" alt="LitLoom preview 1" src="https://github.com/user-attachments/assets/78d30ea5-72be-41eb-9319-c1eb045abb05" />

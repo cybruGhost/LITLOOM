@@ -10,7 +10,7 @@
   "message": "This update tightens playback, downloads, Library, reader stability, and the LitLoom UI.",
   "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.0.0/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "FF496EE198313741A1284B2E29851CA970646178EB25D68873A281479506CBFC",
+  "sha256": "70AC7CED95D947BBCAF4B9D43612229F19A848DD2A7F23FA4F8377C34BC63F21",
   "sizeBytes": 6257367,
   "changelog": [
     "Mini-player close now stops playback instead of only hiding the bar.",

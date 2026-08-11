@@ -1,3 +1,4 @@
+ownerdomain=cybrughost.github.io
 prado.co, 14260, RESELLER
 vidoomy.com, 8953515, RESELLER
 brightmountainmedia.com, 2686958, RESELLER

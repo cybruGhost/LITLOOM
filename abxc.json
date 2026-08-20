@@ -1,21 +1,21 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.7",
-  "versionCode": 13,
+  "versionName": "4.1.8",
+  "versionCode": 14,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-21",
   "mandatory": false,
-  "title": "Narra 4.1.7",
-  "message": "This release aligns the installed build version with the updater and improves Asian Drama browsing.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.7/app-release.apk",
+  "title": "Narra 4.1.8",
+  "message": "This release fixes stale update prompts after an install completes.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.8/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "06F8E2C938B482CB5E68A6A7D35F2CB946928AA28D527D0249F2D57C6AC707C5",
+  "sha256": "291666398466A8C9A12FF1D94A8E17FAEC7581A77EE6EE0D161D5BF6E993344C",
   "sizeBytes": 19461528,
   "changelog": [
-    "The installed app and update manifest now both report Narra 4.1.7, build 13.",
-    "Asian Drama see-all pages load additional source pages as you scroll.",
-    "Asian Drama playback uses landscape and restores the previous orientation when closed.",
-    "The profile update page and updater both read the installed BuildConfig version."
+    "The updater clears stale update state before Android installs the verified package.",
+    "Update checks include the installed build code and request fresh manifest data.",
+    "The updater compares only the live manifest build code against the installed BuildConfig build code.",
+    "Asian Drama see-all pages continue loading more titles as you scroll."
   ]
 }

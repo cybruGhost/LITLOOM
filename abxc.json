@@ -1,24 +1,23 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.0",
-  "versionCode": 6,
+  "versionName": "4.1.1",
+  "versionCode": 7,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-20",
   "mandatory": false,
-  "title": "Narra 4.1.0",
-  "message": "This release tightens account security, anime discovery and downloads, Profile personalization, and Premium media access.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.0/app-release.apk",
+  "title": "Narra 4.1.1",
+  "message": "This release fixes guest access, account confirmation, Premium device warnings and privacy controls.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.1/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "CE94B6539AFA0F4A49D53862DB098455F94BEF8B059852F364A5434E36E03A8C",
-  "sizeBytes": 19395948,
+  "sha256": "9431FB313581FFB1273F0B78BA445D3E06C02DAC34A85233601DBDE896E91298",
+  "sizeBytes": 19412328,
   "changelog": [
-    "Added signed startup verification, Firebase identity checks, device limits and live Premium expiry state.",
-    "Profile Home, Discover and expanded-source settings now change the active app experience immediately.",
-    "Expanded anime search and provider recovery, with episode names, SUB/DUB choices and subtitles.",
-    "Moved anime downloads to individual episode rows with progress and a five-file free allowance; donors remain unlimited.",
-    "Added a Premium Asian Drama destination with live search, catalog sections, details, episodes and playback.",
-    "Added a labeled randomized Narra promotion when ad inventory is unavailable, with a shared frequency cap.",
-    "Fixed top-level navigation, library history clearing and gateway-aware ad removal."
+    "Guests now enter Narra normally without being forced to create or sign in to an account.",
+    "Fixed signed-account confirmation and Premium activation while keeping free access separate from donations.",
+    "New accounts send an email confirmation, and password recovery now clearly covers inbox and spam folders.",
+    "Added a clear Premium three-device warning with actual connected-device counts.",
+    "Added editable contextual or personalized ad privacy controls in Profile.",
+    "Redesigned the update and first-run privacy dialogs with clearer download progress and choices."
   ]
 }

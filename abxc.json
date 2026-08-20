@@ -1,24 +1,21 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.5",
-  "versionCode": 11,
+  "versionName": "4.1.6",
+  "versionCode": 12,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-08-20",
+  "releaseDate": "2026-08-21",
   "mandatory": false,
-  "title": "Narra 4.1.5",
-  "message": "This release strengthens video playback recovery, server selection, captions, PiP continuity, and the Premium Drama experience.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.5/app-release.apk",
+  "title": "Narra 4.1.6",
+  "message": "This release fixes Asian Drama detail loading and improves reliable Premium Drama playback.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.6/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "850EC297584A04461E911182C278F5C34417CEDDE9D1EE40E2EF022FAACD8662",
-  "sizeBytes": 19445148,
+  "sha256": "7DEDEA64803C409905D4B5378A91696E1AC39B2D40A84CDF665526FF0ECDBF68",
+  "sizeBytes": 19445144,
   "changelog": [
-    "Anime playback now keeps Megaplay and VidWish as separate selectable servers when available.",
-    "Caption tracks are carried into the player, including tracks returned with Megaplay and VidWish streams.",
-    "Server, sub, and dub changes preserve the current timestamp and continue playback automatically.",
-    "Picture-in-picture now retains the active player instead of recreating the episode.",
-    "The video controls are more compact, with a lighter timeline and smaller visual controls.",
-    "Premium members can replace Books with Asian Drama on Home and browse live Drama shelves.",
-    "The Narra ad choice and Premium support states now use the updated Narra visual language."
+    "Asian Drama details now load correctly instead of remaining on a loading screen.",
+    "Asian Drama players start loading only after the selected episode is requested.",
+    "Episode rows show source-provided episode names, with numbered fallbacks when a title is unavailable.",
+    "The Premium Home Drama focus keeps distinct Spotlight, Trending, Latest episodes, Most watched, Top rated, Coming soon and Animated stories rails."
   ]
 }

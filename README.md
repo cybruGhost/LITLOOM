@@ -5,11 +5,6 @@
 
 
 
-
-## ✨ Version
-
-**[![Release](https://img.shields.io/badge/release-v4.0.0-gold?style=for-the-badge)](https://github.com/cybruGhost/LITLOOM/releases/tag/V4.0.0)** — Initial Release
-
 ---
 - Accompanist SystemUI Controller
 

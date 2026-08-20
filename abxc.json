@@ -1,23 +1,24 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.0.1",
-  "versionCode": 5,
+  "versionName": "4.1.0",
+  "versionCode": 6,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-07-19",
+  "releaseDate": "2026-08-20",
   "mandatory": false,
-  "title": "LitLoom 4.0.1",
-  "message": "This update adds in-app auto update, visible download progress, faster first paint, and cleaner navigation.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.0.1/app-release.apk",
+  "title": "Narra 4.1.0",
+  "message": "This release tightens account security, anime discovery and downloads, Profile personalization, and Premium media access.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.0/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "D8CF38AA818AE4FDC71D69CCB77460C338581A649A52D48026FD0C41A9CA0E2F",
-  "sizeBytes": 6277723,
+  "sha256": "CE94B6539AFA0F4A49D53862DB098455F94BEF8B059852F364A5434E36E03A8C",
+  "sizeBytes": 19395948,
   "changelog": [
-    "Added native in-app update checks with download progress and Android installer handoff.",
-    "Audiobook and player downloads now show active progress instead of silent button presses.",
-    "Home and Discover now render progressively so slow rows do not blank the whole page.",
-    "Bottom tabs no longer restore stale Discover state when switching back home.",
-    "Discover header was simplified to one search entry point.",
-    "Download and reader requests now preserve binary Accept headers."
+    "Added signed startup verification, Firebase identity checks, device limits and live Premium expiry state.",
+    "Profile Home, Discover and expanded-source settings now change the active app experience immediately.",
+    "Expanded anime search and provider recovery, with episode names, SUB/DUB choices and subtitles.",
+    "Moved anime downloads to individual episode rows with progress and a five-file free allowance; donors remain unlimited.",
+    "Added a Premium Asian Drama destination with live search, catalog sections, details, episodes and playback.",
+    "Added a labeled randomized Narra promotion when ad inventory is unavailable, with a shared frequency cap.",
+    "Fixed top-level navigation, library history clearing and gateway-aware ad removal."
   ]
 }

@@ -1,23 +1,25 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.1",
-  "versionCode": 7,
+  "versionName": "4.1.2",
+  "versionCode": 8,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-20",
   "mandatory": false,
-  "title": "Narra 4.1.1",
-  "message": "This release fixes guest access, account confirmation, Premium device warnings and privacy controls.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.1/app-release.apk",
+  "title": "Narra 4.1.2",
+  "message": "This release separates official-build checks from optional accounts, stabilizes episode downloads, and repairs anime discovery and playback routing.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.2/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "9431FB313581FFB1273F0B78BA445D3E06C02DAC34A85233601DBDE896E91298",
-  "sizeBytes": 19412328,
+  "sha256": "EA1D42C5EECD35FA05B515F3C6B1B561B62B2D5992AC2730D9261BCA539B78BD",
+  "sizeBytes": 19412332,
   "changelog": [
-    "Guests now enter Narra normally without being forced to create or sign in to an account.",
-    "Fixed signed-account confirmation and Premium activation while keeping free access separate from donations.",
-    "New accounts send an email confirmation, and password recovery now clearly covers inbox and spam folders.",
-    "Added a clear Premium three-device warning with actual connected-device counts.",
-    "Added editable contextual or personalized ad privacy controls in Profile.",
-    "Redesigned the update and first-run privacy dialogs with clearer download progress and choices."
+    "Startup now checks only the official Narra package, signature and supported version; accounts remain optional.",
+    "Unconfirmed and non-Premium accounts fall back to free access with ads instead of blocking or resetting the app.",
+    "Episode downloads now show a free-count or Premium confirmation dialog and keep users on the detail page.",
+    "Download progress, success and provider errors remain visible on the matching episode.",
+    "Episode metadata is merged across available sources so real titles and artwork replace placeholder values.",
+    "Fixed current anime search, discovery, schedule, episode and server routes with automatic provider fallback.",
+    "Player ads now begin at player entry and give Unity a short preload window before the in-app promotion fallback.",
+    "The updater rejects same-version prompts and verifies package, build, checksum and signing certificate before install."
   ]
 }

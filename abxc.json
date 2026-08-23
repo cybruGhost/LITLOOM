@@ -1,21 +1,22 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.8",
-  "versionCode": 14,
+  "versionName": "4.1.9",
+  "versionCode": 15,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-08-21",
+  "releaseDate": "2026-08-23",
   "mandatory": false,
-  "title": "Narra 4.1.8",
-  "message": "This release fixes stale update prompts after an install completes.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.8/app-release.apk",
+  "title": "Narra 4.1.9",
+  "message": "A faster, richer release for anime, Asian Drama, audiobooks, and your library.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.9/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "291666398466A8C9A12FF1D94A8E17FAEC7581A77EE6EE0D161D5BF6E993344C",
-  "sizeBytes": 19461528,
+  "sha256": "71DCD9BA34E0001F7D58A85CB01C033A1984393EA613C73FCE8EFCD1F335DAE8",
+  "sizeBytes": 19477912,
   "changelog": [
-    "The updater clears stale update state before Android installs the verified package.",
-    "Update checks include the installed build code and request fresh manifest data.",
-    "The updater compares only the live manifest build code against the installed BuildConfig build code.",
-    "Asian Drama see-all pages continue loading more titles as you scroll."
+    "Anime keeps all native servers and adds Kuro plus direct Miruro sources, with automatic recovery when a stream fails.",
+    "Asian Drama has a proper landscape player, server switching, subtitles, saved episode progress, and live Discover and Library catalogs.",
+    "Audiobook discovery starts at the newest page, mixes multiple direct sources, and no longer waits indefinitely on a slow provider.",
+    "Discover loads only the active catalog, reducing startup traffic and making category switching smoother.",
+    "The installed APK, Profile page, and updater now agree on build 15."
   ]
 }

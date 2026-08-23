@@ -1,22 +1,20 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.12",
-  "versionCode": 18,
+  "versionName": "4.1.13",
+  "versionCode": 19,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-08-23",
+  "releaseDate": "2026-08-24",
   "mandatory": false,
-  "title": "Narra 4.1.12",
+  "title": "Narra 4.1.13",
   "message": "Installed package metadata is now the single source of truth for Narra version checks.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.12/app-release.apk",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.13/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "07B21729051E1F60FCC09F972751EEE964B3BB7C3A3608FF218480060E8D7BCB",
+  "sha256": "C0E336AF1A7AD5AB08DAB709156DE174EF9B064AC3ECE53597EBCE34BD27BF30",
   "sizeBytes": 19494296,
   "changelog": [
     "Profile now reads the version Android reports for the installed Narra package.",
-    "Update comparisons use that same installed package version instead of a duplicated compile-time display value.",
-    "Integrity verification and its local approval cache also use the installed package version.",
-    "Manual update checks continue to show a clear current, available, or error result.",
-    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 18."
+    "Anime catalog loading now uses the working AniList-backed Android repository for Home and Discover.",
+    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 19."
   ]
 }

@@ -1,21 +1,22 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.11",
-  "versionCode": 17,
+  "versionName": "4.1.12",
+  "versionCode": 18,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-23",
   "mandatory": false,
-  "title": "Narra 4.1.11",
-  "message": "Update checking now responds clearly and always uses the current official release channel.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.11/app-release.apk",
+  "title": "Narra 4.1.12",
+  "message": "Installed package metadata is now the single source of truth for Narra version checks.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.12/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "85AE947CE9AA593D87A48C3BF8E53E25813BB4E764EBE3CBADAC6DB7607AC70B",
+  "sha256": "07B21729051E1F60FCC09F972751EEE964B3BB7C3A3608FF218480060E8D7BCB",
   "sizeBytes": 19494296,
   "changelog": [
-    "Check for updates now always shows checking, up-to-date, update-ready, or connection feedback.",
-    "Manual checks bypass stale manifest caches so the result reflects the current release channel.",
-    "Invalid or incompatible release information is reported clearly instead of making the button appear inactive.",
-    "The APK, Profile page, and updater now agree on Narra 4.1.11 build 17."
+    "Profile now reads the version Android reports for the installed Narra package.",
+    "Update comparisons use that same installed package version instead of a duplicated compile-time display value.",
+    "Integrity verification and its local approval cache also use the installed package version.",
+    "Manual update checks continue to show a clear current, available, or error result.",
+    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 18."
   ]
 }

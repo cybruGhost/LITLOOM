@@ -1,23 +1,21 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.10",
-  "versionCode": 16,
+  "versionName": "4.1.11",
+  "versionCode": 17,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-23",
   "mandatory": false,
-  "title": "Narra 4.1.10",
-  "message": "A smoother release with richer discovery, reliable resume controls, and improved playback.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.10/app-release.apk",
+  "title": "Narra 4.1.11",
+  "message": "Update checking now responds clearly and always uses the current official release channel.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.11/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "59797B9141D43C1CA6F1C42243B13B43452E343AA509E04DA3ED05A013CD1697",
+  "sha256": "85AE947CE9AA593D87A48C3BF8E53E25813BB4E764EBE3CBADAC6DB7607AC70B",
   "sizeBytes": 19494296,
   "changelog": [
-    "Home and bottom navigation now keep their correct destinations while live shelves load efficiently.",
-    "Discover adds richer audiobook, book, and manga sections with working View All destinations.",
-    "Asian Drama playback can select real audio tracks when a stream provides multiple languages.",
-    "Manga details now resume the exact last-read chapter instead of returning to chapter one.",
-    "Audiobook and manga entry ads now pause content correctly, respect Premium, and recover when the primary ad is unavailable.",
-    "The installed APK, Profile page, and updater now agree on build 16."
+    "Check for updates now always shows checking, up-to-date, update-ready, or connection feedback.",
+    "Manual checks bypass stale manifest caches so the result reflects the current release channel.",
+    "Invalid or incompatible release information is reported clearly instead of making the button appear inactive.",
+    "The APK, Profile page, and updater now agree on Narra 4.1.11 build 17."
   ]
 }

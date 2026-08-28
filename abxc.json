@@ -17,7 +17,7 @@
     "Update comparisons use that same installed package version instead of a duplicated compile-time display value.",
     "Integrity verification and its local approval cache also use the installed package version.",
     "Manual update checks continue to show a clear current, available, or error result.",
-    "Anime Home and Discover now include cached Tenrai community recommendations.",
+    "Anime Home and Discover now include cached community recommendations.",
     "Anime details now include cached Tenrai viewer reviews alongside enriched metadata.",
     "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 20."
   ]

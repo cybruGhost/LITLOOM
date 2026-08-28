@@ -1,20 +1,24 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.13",
-  "versionCode": 19,
+  "versionName": "4.1.14",
+  "versionCode": 20,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-08-24",
+  "releaseDate": "2026-08-28",
   "mandatory": false,
-  "title": "Narra 4.1.13",
-  "message": "Installed package metadata is now the single source of truth for Narra version checks.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.13/app-release.apk",
+  "title": "Narra 4.1.14",
+  "message": "Tenrai anime recommendations and viewer reviews are now included in the Narra catalog.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.14/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "C0E336AF1A7AD5AB08DAB709156DE174EF9B064AC3ECE53597EBCE34BD27BF30",
-  "sizeBytes": 19494296,
+  "sha256": "187AC5BB277C2057A3B2E138DBFA0AC10B64A11BE49661A4C2263357EB83B72F",
+  "sizeBytes": 19705448,
   "changelog": [
     "Profile now reads the version Android reports for the installed Narra package.",
-    "Anime catalog loading now uses the working AniList-backed Android repository for Home and Discover.",
-    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 19."
+    "Update comparisons use that same installed package version instead of a duplicated compile-time display value.",
+    "Integrity verification and its local approval cache also use the installed package version.",
+    "Manual update checks continue to show a clear current, available, or error result.",
+    "Anime Home and Discover now include cached Tenrai community recommendations.",
+    "Anime details now include cached Tenrai viewer reviews alongside enriched metadata.",
+    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 20."
   ]
 }

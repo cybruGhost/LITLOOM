@@ -1,16 +1,16 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.16",
-  "versionCode": 22,
+  "versionName": "4.1.17",
+  "versionCode": 23,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-30",
   "mandatory": false,
-  "title": "Narra 4.1.16",
-  "message": "My List, TV access, audio fallback, and release updates are more reliable in this release.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.16/app-release.apk",
+  "title": "Narra 4.1.17",
+  "message": "Anime playback recovery now keeps the selected episode and audio mode together while giving slow servers time to retry.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.17/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "366C41DD7270CB098749D10ACCD2EAFB8ADF2C4D965E3660C23DA567045843B8",
+  "sha256": "D56E6D6FD0DEEB550ECB06E0F6B540938DCF39ED258BC44CE8B521D553228F62",
   "sizeBytes": 19754600,
   "changelog": [
     "Comic details now merge native and hosted issue feeds instead of caching a single empty response.",
@@ -24,6 +24,10 @@
     "TV checks the official update manifest at startup; free viewers cannot dismiss an update, while Premium can dismiss optional releases.",
     "Anime playback can move to another provider and, when needed, the other audio pool without mislabeling the active mode.",
     "Provider requests include Origin and remember a successful audio mode to improve CDN playback recovery.",
-    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 22."
+    "Narra package, Profile, integrity check, release manifest, and APK are synchronized at build 22.",
+    "Audio fallback no longer persists a prior mode across separate player sessions.",
+    "Anime playback retries the current server once, keeps the same episode during audio fallback, and then rotates providers.",
+    "Megaplay and VidWish source resolution uses corrected requests, longer resolver timeouts, and distinct Kuro route labels.",
+    "Narra package, release manifest, and APK are synchronized at build 23."
   ]
 }

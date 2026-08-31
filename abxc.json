@@ -1,21 +1,21 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.20",
-  "versionCode": 26,
+  "versionName": "4.1.21",
+  "versionCode": 27,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-31",
   "mandatory": false,
-  "title": "Narra 4.1.20",
-  "message": "Final update: Premium checks and playback recovery are fixed. Enjoy Narra.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.20/app-release.apk",
+  "title": "Narra 4.1.21",
+  "message": "Final update: Premium checks are fixed. Enjoy Narra.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.21/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "6F0B3E5ACDD08E403C83A987507AA4F52C2525BBE2E12FD67FF113315D8ED990",
+  "sha256": "518F99C8587142B73799DF9198C2B1D77EA8273540E3CC7ABDEB3D6CB49B494F",
   "sizeBytes": 19841745,
   "changelog": [
-    "Final update: Premium checks and playback recovery are fixed.",
+    "Final update: Premium checks are fixed. Enjoy Narra.",
     "Signed-in accounts are checked automatically when Narra starts.",
-    "Premium users keep ads disabled while account verification is in progress.",
-    "Existing anime servers and Narra Server remain available with fallback recovery."
+    "Premium status is preserved while the gateway refreshes.",
+    "Existing anime servers and Narra Server keep fallback recovery."
   ]
 }

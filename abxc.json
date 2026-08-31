@@ -1,25 +1,21 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.19",
-  "versionCode": 25,
+  "versionName": "4.1.20",
+  "versionCode": 26,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-08-31",
   "mandatory": false,
-  "title": "Narra 4.1.19",
-  "message": "Narra Server playback, account recovery, and Premium status refresh are improved in this release.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.19/app-release.apk",
+  "title": "Narra 4.1.20",
+  "message": "Final update: Premium checks and playback recovery are fixed. Enjoy Narra.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.20/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "8A418366D1C4863A8B2811E5F12C6FB6D04351F7ADCE0E5BA470319D31A0B559",
-  "sizeBytes": 19841741,
+  "sha256": "6F0B3E5ACDD08E403C83A987507AA4F52C2525BBE2E12FD67FF113315D8ED990",
+  "sizeBytes": 19841745,
   "changelog": [
-    "Narra Server is available for securely authorized Premium playback and keeps stream resolution on the device.",
-    "Subtitle tracks and SUB/DUB audio selection are preserved when the upstream source provides them.",
-    "Account verification now clears stale account benefits on an account switch and retries after connectivity returns.",
-    "Premium days remaining are calculated from the verified expiry time so the app matches the gateway dashboard.",
-    "The latest MainActivity startup and Android TV routing changes are included.",
-    "Existing public anime providers and automatic playback recovery remain available as fallbacks.",
-    "Player recovery keeps the selected episode and audio mode while moving between providers.",
-    "Comic, manga, audiobook, saved-list, and TV improvements from the previous release remain included."
+    "Final update: Premium checks and playback recovery are fixed.",
+    "Signed-in accounts are checked automatically when Narra starts.",
+    "Premium users keep ads disabled while account verification is in progress.",
+    "Existing anime servers and Narra Server remain available with fallback recovery."
   ]
 }

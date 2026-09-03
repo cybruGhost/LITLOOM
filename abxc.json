@@ -1,20 +1,20 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.22",
-  "versionCode": 28,
+  "versionName": "4.1.23",
+  "versionCode": 29,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-09-03",
   "mandatory": false,
-  "title": "Narra 4.1.22",
-  "message": " Enjoy Narra.Stable",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.22/app-release.apk",
+  "title": "Narra 4.1.23",
+  "message": "Premium account verification is fixed and reliable. Enjoy Narra.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.23/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "33584496D1189FCF4954C7D1557BEEB34DCC9F9927FB95F9B0C759CB3CD03FD0",
+  "sha256": "A99A919D41FF88FCA58DD25A046F294BF4651B3B484910B94FCCAB0404B68EA8",
   "sizeBytes": 21160906,
   "changelog": [
-    "Premium checking is now fully functional and integrated into the app.",
-    "sign-in and sign-up flows have been improved for a smoother user experience.",
-    "playback performance has been optimized, reducing buffering and improving load times."
+    "Premium account checks are more reliable after sign-in and account switching.",
+    "Paid access is resolved consistently across Profile and protected content.",
+    "Donation activation failures now retry instead of being silently accepted."
   ]
 }

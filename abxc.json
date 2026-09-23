@@ -1,20 +1,75 @@
 {
   "app": "Narra",
   "packageName": "com.storyvault",
-  "versionName": "4.1.28",
-  "versionCode": 34,
+  "versionName": "4.1.30",
+  "versionCode": 36,
   "minSupportedVersionCode": 1,
-  "releaseDate": "2026-09-13",
+  "releaseDate": "2026-09-24",
   "mandatory": false,
-  "title": "Narra 4.1.28",
-  "message": "Final update: account verification, playback reliability, downloads, and reader experience are improved. Enjoy Narra.",
-  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.28/app-release.apk",
+  "title": "Narra 4.1.30 — integrity gate fix",
+  "message": "Gate settings now apply correctly. If 4.1.28 is installed, sync your account, uninstall it once, then install 4.1.30 from the official release page. Narra 4.1.29 updates normally.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.30/app-release.apk",
   "apkFileName": "app-release.apk",
-  "sha256": "05E801C13102DDDD1B2BA6D60C0A1D04F8EB80C12588D555DACCFF5918544E9B",
-  "sizeBytes": 21379163,
+  "sha256": "7A4121E2163CBE683BE67365DCE6C1385BE89FB1DC5B91B9B9CF94648D43DB79",
+  "signingCertificateSha256": "B19DE9244D7A342EBE18A9EBFB69CE8C8A5206B14449F8E7BE0F2CB6CF61FBDA",
+  "sizeBytes": 21383255,
   "changelog": [
-    "Account verification now recovers cleanly after sign-in and refresh.",
-    "Playback and download reliability are improved.",
-    "Reader and app stability improvements are included."
-  ]
+    "The App Integrity gate now follows live admin settings without a stale local certificate blocker.",
+    "Every cold launch requires fresh gateway approval; cached offline approval can no longer bypass the gate.",
+    "One-time signing migration: sync, uninstall 4.1.28, then install this release; later updates work in place.",
+    "The anime player now offers Fit, Fill, and Stretch modes with cleaner gesture controls.",
+    "Buffering no longer switches servers automatically; choose and retry servers manually.",
+    "Megaplay and AniHQ extraction are updated, with failed streams filtered before playback.",
+    "Free playback now consistently completes its ad or timed fallback gate.",
+    "A compact CubeTV showcase appears after Anime Continue Watching and stays remotely configurable."
+  ],
+  "notifications": {
+    "enabled": true,
+    "premium_users": false,
+    "frequency_hours": 24,
+    "items": [
+      {
+        "id": "premium_shop",
+        "title": "Enjoy Narra without ads",
+        "message": "Support Narra and unlock Premium playback, unlimited downloads, and an ad-free experience.",
+        "url": "https://cyberghost-shop.fourthwall.com/",
+        "placement": "home_notice",
+        "cta_label": "See Premium",
+        "logo_url": "",
+        "image": { "enabled": false, "url": "" },
+        "system_notification": true,
+        "home_notification": true
+      },
+      {
+        "id": "cubetv_big_screen",
+        "title": "Made for the big screen",
+        "message": "Movies and series feel bigger on CubeTV — a cinematic experience built for your remote.",
+        "url": "https://thecub.netlify.app/",
+        "placement": "anime_after_continue",
+        "cta_label": "Explore CubeTV",
+        "logo_url": "https://thecub.netlify.app/svg/logo.png",
+        "image": {
+          "enabled": true,
+          "url": "https://thecube.lovable.app/__l5e/assets-v1/ecd2fdef-61e3-4c0d-b352-be1f1b06527d/cubetv-real-home.jpeg"
+        },
+        "system_notification": false,
+        "home_notification": false
+      },
+      {
+        "id": "cubetv_one_apk",
+        "title": "One APK for phone and TV",
+        "message": "Install the same file on both devices. On Fire TV or Android TV, enter Downloader code 3085564.",
+        "url": "https://thecub.netlify.app/",
+        "placement": "anime_after_continue",
+        "cta_label": "Get CubeTV",
+        "logo_url": "https://thecub.netlify.app/svg/logo.png",
+        "image": {
+          "enabled": true,
+          "url": "https://thecube.lovable.app/__l5e/assets-v1/ecd2fdef-61e3-4c0d-b352-be1f1b06527d/cubetv-real-home.jpeg"
+        },
+        "system_notification": false,
+        "home_notification": false
+      }
+    ]
+  }
 }

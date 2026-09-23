@@ -42,8 +42,8 @@
       },
       {
         "id": "cubetv_big_screen",
-        "title": "Made for the big screen",
-        "message": "Movies and series feel bigger on CubeTV — a cinematic experience built for your remote.",
+        "title": "watch movies on Tv",
+        "message": "Movies and series on CubeTV — a cinematic experience built for your remote.",
         "url": "https://thecub.netlify.app/",
         "placement": "anime_after_continue",
         "cta_label": "Explore CubeTV",
@@ -57,8 +57,8 @@
       },
       {
         "id": "cubetv_one_apk",
-        "title": "One APK for phone and TV",
-        "message": "Install the same file on both devices. On Fire TV or Android TV, enter Downloader code 3085564.",
+        "title": "movies on TV",
+        "message": "Install On Fire TV or Android TV, enter Downloader code 3085564.",
         "url": "https://thecub.netlify.app/",
         "placement": "anime_after_continue",
         "cta_label": "Get CubeTV",

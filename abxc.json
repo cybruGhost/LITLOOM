@@ -15,7 +15,7 @@
   "sha256": "7A4121E2163CBE683BE67365DCE6C1385BE89FB1DC5B91B9B9CF94648D43DB79",
   "sizeBytes": 21383255,
   "changelog": [
-    "One-time reinstall: sync your account, uninstall the current Narra app, then install this release from an official link.",
+    "One-time reinstall: uninstall the current Narra app, then install this release from an official link.",
     "After Narra 4.1.30 is installed, future updates can install normally.",
     "The anime player now offers Fit, Fill, and Stretch modes with cleaner gesture controls.",
     "Buffering no longer switches servers automatically; choose and retry servers manually.",

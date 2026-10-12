@@ -66,7 +66,7 @@
           "url": "https://thecube.lovable.app/__l5e/assets-v1/ecd2fdef-61e3-4c0d-b352-be1f1b06527d/cubetv-real-home.jpeg"
         },
         "system_notification": false,
-        "home_notification": false
+        "home_notification": true
       }
     ]
   }

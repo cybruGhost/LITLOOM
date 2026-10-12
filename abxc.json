@@ -5,7 +5,7 @@
   "versionCode": 38,
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-10-07",
-  "mandatory": false,
+  "mandatory": true,
   "title": "Narra 4.1.32 — offline anime and TV focus",
   "message": "Install 4.1.32 over Narra 4.1.31 to keep your library and downloads. Asian Drama is available in Discover for everyone, offline anime downloads are more reliable, and TV focus is easier to see.",
   "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.32/app-release.apk",

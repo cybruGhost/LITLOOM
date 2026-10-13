@@ -1,1 +1,63 @@
-{"app":"Narra","packageName":"com.storyvault","versionName":"4.1.32","versionCode":38,"minSupportedVersionCode":1,"releaseDate":"2026-10-07","mandatory":true,"title":"Narra 4.1.32 — offline anime and TV focus","message":"Install 4.1.32 over Narra 4.1.31 to keep your library and downloads. Asian Drama is available in Discover for everyone, offline anime downloads are more reliable, and TV focus is easier to see.","apkUrl":"https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.32/app-release.apk","officialReleaseUrl":"https://github.com/cybruGhost/LITLOOM/releases/tag/v4.1.32","downloadPageUrl":"https://thecub.netlify.app/narra","apkFileName":"app-release.apk","sha256":"D48C84BBABE803F38EAA7F57BB580DD8AB6DE49B8117E387D7F0064EF1F7C41B","sizeBytes":23895315,"changelog":["Update over 4.1.31 without uninstalling to keep your local library, downloads, and settings.","Asian Drama is available to free users in Discover; Arabic Anime remains on Home but is hidden from Discover.","Offline anime downloads better handle encrypted and image-padded streams and reject unusable video files. Redownload any older episode that will not play.","Downloaded anime episodes appear individually in the Download Hub.","TV remote focus outlines are easier to see."],"notifications":{"enabled":true,"premium_users":false,"frequency_hours":24,"items":[{"id":"premium_shop","title":"Enjoy Narra without ads","message":"Support Narra and unlock Premium playback, unlimited downloads, and an ad-free experience.","url":"https://cyberghost-shop.fourthwall.com/","placement":"home_notice","cta_label":"See Premium","logo_url":"","image":{"enabled":false,"url":""},"system_notification":true,"home_notification":true},{"id":"cubetv_big_screen","title":"Made for the big screen","message":"Movies and series feel bigger on CubeTV. One APK for phone and TV; Fire TV Downloader code 3085564.","url":"https://thecub.netlify.app/","placement":"anime_after_continue","cta_label":"Explore CubeTV","logo_url":"https://thecub.netlify.app/svg/logo.png","image":{"enabled":true,"url":"https://thecube.lovable.app/__l5e/assets-v1/ecd2fdef-61e3-4c0d-b352-be1f1b06527d/cubetv-real-home.jpeg"},"system_notification":false,"home_notification":false}]}}
+{
+  "app": "Narra",
+  "packageName": "com.storyvault",
+  "versionName": "4.1.33",
+  "versionCode": 39,
+  "minSupportedVersionCode": 1,
+  "releaseDate": "2026-10-13",
+  "mandatory": true,
+  "maintenanceEnabled": false,
+  "maintenanceMessage": "Narra is undergoing maintenance. Please check back shortly.",
+  "title": "Narra 4.1.33 — smoother discovery and playback",
+  "message": "Install 4.1.33 over Narra 4.1.32 to keep your library, downloads, and settings. Anime details and Library layouts are cleaner, and free Asian Drama playback now includes ads while Premium stays ad-free.",
+  "apkUrl": "https://github.com/cybruGhost/LITLOOM/releases/download/v4.1.33/app-release.apk",
+  "officialReleaseUrl": "https://github.com/cybruGhost/LITLOOM/releases/tag/v4.1.33",
+  "downloadPageUrl": "https://thecub.netlify.app/narra",
+  "apkFileName": "app-release.apk",
+  "sha256": "620A428A7CE00FB11F76EB8724883E078E0D8A47469F7E105C06D5A47C311D29",
+  "sizeBytes": 23938743,
+  "changelog": [
+    "Update over 4.1.32 without uninstalling to keep your local library, downloads, and settings.",
+    "Anime detail and episode layouts are cleaner, with more room for metadata and reviews.",
+    "Library and navigation layouts are more compact and easier to use.",
+    "Free Asian Drama playback now uses the normal ad flow; Premium remains ad-free.",
+    "Account checks better tolerate a temporary Firebase token refresh failure."
+  ],
+  "notifications": {
+    "enabled": true,
+    "premium_users": false,
+    "frequency_hours": 24,
+    "items": [
+      {
+        "id": "premium_shop",
+        "title": "Enjoy Narra without ads",
+        "message": "Support Narra and unlock Premium playback, unlimited downloads, and an ad-free experience.",
+        "url": "https://cyberghost-shop.fourthwall.com/",
+        "placement": "home_notice",
+        "cta_label": "See Premium",
+        "logo_url": "",
+        "image": {
+          "enabled": false,
+          "url": ""
+        },
+        "system_notification": true,
+        "home_notification": true
+      },
+      {
+        "id": "cubetv_big_screen",
+        "title": "Made for the big screen",
+        "message": "Movies and series feel bigger on CubeTV. One APK for phone and TV; Fire TV Downloader code 3085564.",
+        "url": "https://thecub.netlify.app/",
+        "placement": "anime_after_continue",
+        "cta_label": "Explore CubeTV",
+        "logo_url": "https://thecub.netlify.app/svg/logo.png",
+        "image": {
+          "enabled": true,
+          "url": "https://thecube.lovable.app/__l5e/assets-v1/ecd2fdef-61e3-4c0d-b352-be1f1b06527d/cubetv-real-home.jpeg"
+        },
+        "system_notification": false,
+        "home_notification": false
+      }
+    ]
+  }
+}

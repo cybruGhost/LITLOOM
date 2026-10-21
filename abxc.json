@@ -6,7 +6,7 @@
   "minSupportedVersionCode": 1,
   "releaseDate": "2026-10-13",
   "mandatory": true,
-  "maintenanceEnabled": false,
+  "maintenanceEnabled": true,
   "maintenanceMessage": "Narra ran into a critical problem  check https://thecub.netlify.app.",
   "title": "Narra 4.1.33 — smoother discovery and playback",
   "message": "Install 4.1.33 over Narra 4.1.32 to keep your library, downloads, and settings. Anime details and Library layouts are cleaner, and free Asian Drama playback now includes ads while Premium stays ad-free.",

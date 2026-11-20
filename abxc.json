@@ -45,11 +45,11 @@
       },
       {
         "id": "cubetv_big_screen",
-        "title": "CubeTV for TV",
+        "title": "Movies on TV",
         "message": "Movies and series on Android TV and Fire TV. Downloader code: 3085564.",
         "url": "https://thecub.netlify.app/",
         "placement": "anime_after_continue",
-        "cta_label": "Get CubeTV",
+        "cta_label": "Download CubeTV",
         "logo_url": "https://thecub.netlify.app/svg/logo.png",
         "image": {
           "enabled": true,

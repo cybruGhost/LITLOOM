@@ -17,10 +17,7 @@
   "sha256": "B566EDC0763BADCC8886BDB13B3DE75C2BF15A92AD9C7F03077BD82DE314B77C",
   "sizeBytes": 24342891,
   "changelog": [
-    "Update over production-signed Narra 4.1.29 or later without uninstalling to keep local data.",
-    "Android TV Home, Search, detail, and Settings screens have been refreshed for remote navigation.",
-    "Connect a verified Narra account to TV using a short code from TV Settings.",
-    "Check for app updates directly from TV Settings.",
+    "Update over production-signed Narra.",
     "Newly discovered subtitle tracks no longer restart a healthy anime stream."
   ],
   "notifications": {
